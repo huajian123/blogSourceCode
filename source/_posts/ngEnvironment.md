@@ -27,6 +27,8 @@ $  nvm list available
 
 测试更新博客
 
+测试更新博客2
+
 [需要关注的博客](https://wellwind.idv.tw/blog/)
 ## 安装Node
 ## angular-cli
