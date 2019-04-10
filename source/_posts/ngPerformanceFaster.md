@@ -17,3 +17,19 @@ Angular在每个变更检测周期结束后执行
 模版表达式。变更检测周期会被多种异步活动触发，如Promise解析，Http返回结果，
 定时器时间，按键或鼠标移动等。
 所以模版表达式应该快速结束。
+
+## 隐藏元素
+``` bash
+<!-- isSpecial is true -->
+<div [class.hidden]="!isSpecial">Show with class</div>
+<div [class.hidden]="isSpecial">Hide with class</div>
+
+<!-- HeroDetail is in the DOM but hidden -->
+<app-hero-detail [class.hidden]="isSpecial"></app-hero-detail>
+
+<div [style.display]="isSpecial ? 'block' : 'none'">Show with style</div>
+<div [style.display]="isSpecial ? 'none'  : 'block'">Hide with style</div>
+```
+如果通过以上代码来隐藏元素，子树中的组件及其状态仍然保留着。
+即使对于不可见属性，Angular也会继续变更检测。子树可能占有相当可观的内存和运算资源。
+应该使用ngIf来代替
