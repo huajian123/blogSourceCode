@@ -33,3 +33,20 @@ Angular在每个变更检测周期结束后执行
 如果通过以上代码来隐藏元素，子树中的组件及其状态仍然保留着。
 即使对于不可见属性，Angular也会继续变更检测。子树可能占有相当可观的内存和运算资源。
 应该使用ngIf来代替
+
+## *ngFor
+ngFor有时候性能较差，特别是在大型列表中。 对一个条目的一丁点改动、移除或添加，都会导致级联的 DOM 操作。
+
+我们应该使用trackBy，往组件中添加一个方法，它会返回 NgFor应该追踪的值
+``` bash
+// ts中
+trackByHeroes(index: number, hero: Hero): number { return hero.id; }
+
+//html中
+<div *ngFor="let hero of heroes; trackBy: trackByHeroes">
+  ({{hero.id}}) {{hero.name}}
+</div>
+```
+如果没有 trackBy，这些列在改变引用时都会触发完全的 DOM 元素替换。
+
+有了 trackBy，则只有修改了 id 的列才会触发元素替换
