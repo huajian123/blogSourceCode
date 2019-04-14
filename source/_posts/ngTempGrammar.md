@@ -48,3 +48,5 @@ $any 转换函数可以和 this 联合使用，以便访问组件中未声明过
 </div>
 ```
 $any 转换函数可以在绑定表达式中任何可以进行方法调用的地方使用。
+[台湾博客1](https://blog.kevinyang.net/archives/)
+[台湾博客2](https://wellwind.idv.tw/blog/)
