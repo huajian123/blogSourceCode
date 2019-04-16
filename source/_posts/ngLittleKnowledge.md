@@ -1,5 +1,5 @@
 ---
-title: 【Angular小知识】事件
+title: 【Angular小知识】
 date: 2019-04-15 09:19:04
 tags: 
 - Angular 
