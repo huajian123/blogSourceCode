@@ -1,5 +1,5 @@
 ---
-title: ngSpecialClass
+title: 特殊的类
 date: 2019-04-15 23:15:24
 categories: 
 - Angular
@@ -18,4 +18,8 @@ import { Directive, ViewContainerRef } from '@angular/core';
 export class AdDirective {
   constructor(public viewContainerRef: ViewContainerRef) { }
 }
+```
+### 正则表达式类
+```
+nameRe: RegExp
 ```
