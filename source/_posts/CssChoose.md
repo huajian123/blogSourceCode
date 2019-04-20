@@ -95,3 +95,42 @@ h2+p
     background-color:red
    }
 ```
+
+### 结构化伪类
++  tr:nth-child(odd) 奇数odd,偶数even
++   tr:nth-child(3)
++   tr:nth-child(3n+4)
++   tr:nth-child(-n+3) 只会选择前三个元素
++   :nth-last-child伪类，表示从最后一个元素倒数
++   :first-child===:nth-child(1)
++   :last-child:nth-child(1) 选择最后一个子元素 
++   div：nth-of-type（n） 第n个类型是div的子元素
++   :only-child选择的是父元素中只有一个子元素，而且只有唯一的一个子元素。也就是说，匹配的元素的父元素中仅有一个子元素，而且是一个唯一的子元素。
+```$xslt
+  <div class="post">
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+  </div>
+  <div class="post">
+    <p>我是一个段落</p>
+  </div>
+  
+  .post p {
+    background: green;
+    color: #fff;
+    padding: 10px;
+  }
+  .post p:only-child {
+    background: orange;
+  }
+```
+
+### 表单伪类
+```
+<input type="text" name="aaa" required>
+```
++ input:required{outline:2px solid red;}有requried的属性添加边框
++ input:optional{}为没有requried...
++ input[type='email']:invalid{} 
++ :read-only有readonly, :read-write没有readonly等
+ 
