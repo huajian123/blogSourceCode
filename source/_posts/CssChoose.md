@@ -67,3 +67,31 @@ h2+p
 ```
 ### 注意
 应该避免用伪元素插入对交互有实质影响的内容。
+
+### 伪类
+基于文档结构以外的情形来位页面添加样式，这时候就可以使用伪类。
+```$xslt
+   /*未问过的链接*/
+    a:link{color:blue}
+    /*访问过的链接*/
+    a:visited{color:blue}
+    /*链接在鼠标悬停及获取键盘焦点时*/
+    a:hover,a:focus{color:blue}
+    /*活动状态时*/
+    a:active{color:blue}
+```
+### :target伪类
+匹配的元素有一个ID属性，并且该属性的值出现在当前页面URL末尾的井号（#）后边。
+如打开http://example.com/blog/1/#comment-3找到页面的标记为<article class="component" id="comment-3">...的评论
+那么就可以匹配一下规则来高亮显示
+```$xslt
+   .comment:target{
+    background-color:red
+   }
+```
+### :not()选择符伪类
+```$xslt
+   .comment:target:not(.comment-downvoted){
+    background-color:red
+   }
+```
