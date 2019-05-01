@@ -1,5 +1,5 @@
 ---
-title: 注解
+title: 【SpringBoot】注解
 date: 2019-04-17 23:30:28
 categories: 
 - Java
@@ -11,4 +11,9 @@ tags:
 
 启动注解@SpringBootApplication
 
-@RestController=@Controller+@ResponseBody(这个注解表示把结果以json返回)
+
+@ResponseBody(这个注解表示把结果以json返回)
+
+
+@RestController=@Controller+@ResponseBody
+
