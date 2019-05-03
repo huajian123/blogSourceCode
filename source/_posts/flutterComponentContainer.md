@@ -6,7 +6,7 @@ categories:
 tags:
 - Flutter
 ---
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

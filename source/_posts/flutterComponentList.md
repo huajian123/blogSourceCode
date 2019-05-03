@@ -8,7 +8,7 @@ tags:
 ---
 
 ### 基本使用
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
 
 
 ### 横向列表以及组件拆分
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -107,7 +107,7 @@ class MyList extends StatelessWidget {
 ```
 
 ### 动态加载列表
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() =>
@@ -145,7 +145,7 @@ class MyApp extends StatelessWidget {
 
 ```
 ### 网格列表写法一
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -181,7 +181,7 @@ class MyApp extends StatelessWidget {
 
 ```
 ### 网格列表写法二
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

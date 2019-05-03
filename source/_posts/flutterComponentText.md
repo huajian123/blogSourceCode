@@ -7,7 +7,7 @@ tags:
 - Flutter
 ---
 ### Text组件
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
