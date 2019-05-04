@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 ### 引用项目中的图片
+这样添加会在打包时添加到包体里面，增大安装包体积
 + 在项目根目录建立文件夹images,里面存放header.jpg
 + pubspec.yaml文件中 assets里面添加
 ```dart
