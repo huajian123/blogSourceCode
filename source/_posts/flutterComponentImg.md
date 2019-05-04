@@ -42,3 +42,25 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+### 引用项目中的图片
++ 在项目根目录建立文件夹images,里面存放header.jpg
++ pubspec.yaml文件中 assets里面添加
+```dart
+  assets:
+    - images/head.jpg
+```
++ 添加代码
+```dart
+import 'package:flutter/material.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Image.asset('images/head.jpg'),
+    );
+  }
+}
+```
