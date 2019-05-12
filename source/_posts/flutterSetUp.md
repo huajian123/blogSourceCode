@@ -17,4 +17,7 @@ categories: Flutter
 + 点击Configure选择plugins,搜索flutter,会提示要安装dart，点击确认
 + CMD执行flutter doctor,执行命令flutter doctor --android-licenses 全部选y
 
++ AndroidStudio中安装插件FishReduxTemplate
++ AndroidStudio中点击定位文件夹快捷右边的设置，取消勾选compact middle packages
+
 
